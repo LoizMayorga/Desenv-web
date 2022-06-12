@@ -74,7 +74,7 @@ img{
     height: 100%;
 }
 body{   
-    background-image: url('./images/backgronud-body-ben.jpg');
+    background-image: url('./backgronud-body-ben.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -87,7 +87,7 @@ body{
 
   }
 .principal{
-    background-image: url('./images/barbeiro.jpg');
+    background-image: url('./barbeiro.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -142,7 +142,7 @@ h1 {
 }
 button{
     margin-top: 50px;
-    
+    cursor: pointer;
     padding: 25px;
     background-color: black;
     border: none;
@@ -164,7 +164,7 @@ button:active{
 #sobre-nos{
     position: relative;
     padding-top: 150px;
-    background-image: url('./images/background-aboutus.jpg');
+    background-image: url('./background-aboutus.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px;
@@ -191,7 +191,7 @@ p{
   
 }
 #contato{
-    background-image: url('./images/background-contato.jpg');
+    background-image: url('./background-contato.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px;
@@ -301,3 +301,136 @@ li{
 .margin-top{
     margin-top: 20px;
 }
+
+#overlay {
+    position: fixed;
+    align-items: center;
+    display: none;
+    justify-content: center;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+  
+  .form2 {
+    position: fixed;
+    background-color: #111111;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 20px;
+    width: 320px;
+  }
+  
+  .titulo {
+    color: #eee;
+    font-family: 'Actor', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitulo {
+    color: #eee;
+    font-family: 'Actor', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input2 {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  .fechar {
+    padding: 0;
+    font-size: 18px;
+    margin: auto;  
+    width: 25px;
+    position: relative;
+    left: 92%;
+    
+  }
+  .minimizar {
+    background-color: #111111;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+  }
+  
+  .minimizar-pequeno {
+    width: 50px;
+  }
+  .minimizar-medio {
+    width: 60px;
+  }
+  
+  .input2:focus ~ .minimizar,
+  .input2:not(:placeholder-shown) ~ .minimizar {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input2:focus ~ .placeholder,
+  .input2:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input2:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .input2:focus ~ .placeholder {
+    color: #ffffff;
+  }
+  
+  .agendar {
+    padding: 0;
+    border-radius: 12px;
+    font-family: 'Actor', sans-serif;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
